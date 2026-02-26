@@ -8,23 +8,15 @@
 <body>
 
 <form id="signup-form">
-  <label for="agree">
-    <input type="checkbox" id="agree" name="agree">
+  <p>
     I agree to the 
     <a href="https://testrigor.com/docs/language" target="_blank">Terms</a> 
     and 
-    <a href="https://testrigor.com/docs/language" target="_blank">Privacy Policy</a>
-  </label>
-  <button type="submit" disabled id="submit">Submit</button>
-</form>
+    <a href="https://testrigor.com/docs/language" target="_blank">Privacy Policy</a>.
+  </p>
 
-<script>
-  const checkbox = document.getElementById("agree");
-  const button = document.getElementById("submit");
-  checkbox.addEventListener("change", () => {
-    button.disabled = !checkbox.checked;
-  });
-</script>
+  <button type="submit" id="submit">Submit</button>
+</form>
 
 </body>
 </html>
