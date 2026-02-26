@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Signup Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<form id="signup-form">
+  <label for="agree">
+    <input type="checkbox" id="agree" name="agree">
+    I agree to the 
+    <a href="https://testrigor.com/docs/language" target="_blank">Terms</a> 
+    and 
+    <a href="https://testrigor.com/docs/language" target="_blank">Privacy Policy</a>
+  </label>
+  <button type="submit" disabled id="submit">Submit</button>
+</form>
+
+<script>
+  const checkbox = document.getElementById("agree");
+  const button = document.getElementById("submit");
+  checkbox.addEventListener("change", () => {
+    button.disabled = !checkbox.checked;
+  });
+</script>
+
+</body>
+</html>
